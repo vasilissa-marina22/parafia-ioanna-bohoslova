@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Храм на Позняках, Церковь на Позняках, Храм Иоанна Богослова, Церковь Иоанна Богослова, Храм Иоанна Богослова на Позняках, Церковь Иоанна Богослова на Позняках, Храм Иоанна Богослова Позняки, Храм Иоанна Богослова Позняки Киев, Храм Иоанна Богослова Киев, Храм Иоанна Богослова Киев Позняки, Храм Святого Иоанна Богослова, Храм Апостола Иоанна Богослова, Храм Веры Надежды Любови на Позняках, Церковь Веры Надежды Любови на Позняках"/>
+<meta name="Robots" content="ALL">
+<meta name="Author" content="Zozulenko Oleg">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Храм Иоанна Богослова</title>
+<!-- TemplateEndEditable -->
+<link href="../hram_styles.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<div class="container">
+  <header></header>
+  <nav>
+    <p><a href="../Index.html">Новости</a> | <a href="../About_us.html">О Храме</a> | <a href="../Leaders.html">Церковный клир</a> | <a href="../Contacts.html">Контакты</a></p>
+  </nav>
+  <div class="sidebar1">
+    <nav>
+      <ul>
+        <li><a href="../Service.html">Богослужения</a></li>
+        <li><a href="../School.html">Воскресная школа</a></li>
+        <li><a href="../Lavka.html">Церковная лавка</a></li>
+        <li><a href="../Tea_Party.html">Чаепития</a></li>
+        <li><a href="../Palomnik.html">Паломничества</a></li>
+        <li><a href="../Building.html">Храмостроительство</a></li>
+        <li><a href="../Poslushnitsa.html">Записки послушницы</a></li>
+        <li><a href="../Fotogallery.html">Фотогалерея</a></li>
+      </ul>
+    </nav>
+    
+    <!-- TemplateBeginEditable name="SideContent" -->
+        <aside>
+    </aside>
+    <!-- TemplateEndEditable --></div>
+  <!-- TemplateBeginEditable name="MainContent" -->
+  <article class="content">
+    <!-- end .content -->
+  </article>
+  <!-- TemplateEndEditable -->
+  <footer>
+    <p id="foottext">Религиозная община Украинской Православной Церкви парафии Святого апостола и евангелиста Иоанна Богослова (г.Киев, Позняки)</p>
+  </footer>
+<!-- end .container --></div>
+</body>
+</html>

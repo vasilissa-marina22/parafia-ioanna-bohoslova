@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+body {
+
+	background-image: url(images/green90.gif);
+    background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+	font-size: 16px;
+	text-align: center;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	text-align: center;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 950px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	border: 2px solid #060;
+	background-color: #F9F1DE;
+	background-image: url(images/divider.png);
+	background-repeat: repeat-y;
+}
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header {
+	background-color: #2E8B57;
+	background-image: url(images/banner.jpg);
+	background-repeat: no-repeat;
+	height: 403px;
+}
+/* ~~ These are the columns for the layout. ~~*/
+
+.sidebar1 {
+	float: left;
+	width: 180px;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 770px;
+	float: right;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+.content h1 {
+	font-size: 160%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 5px;
+	color: #336600;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+}
+.content section h2 {
+	font-size: 130%;
+	color: #693;
+	font-family: Verdana, "Times New Roman", Arial;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.content .main {
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.content .maintable {
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.content .profile {
+	margin-right: 25px;
+	margin-bottom: 15px;
+	margin-left: 25px;
+	border-bottom-width: 10px;
+	border-left-width: 2px;
+	border-top-width: 2px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #CADAAF;
+	border-top-color: #CADAAF;
+	border-left-color: #CADAAF;
+	border-right-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-right-color: #CADAAF;
+}
+.content .main table#schedule {
+	font-size: 90%;
+	border-collapse: collapse;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 3px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #5CA631;
+	border-right-color: #5CA631;
+	border-bottom-color: #5CA631;
+	border-left-color: #5CA631;
+	background-color: #E7F5CF;
+	text-align: center;
+}
+
+
+
+.content section p{
+	font-family: Verdana, "Times New Roman", Arial;
+	font-size: 90%;
+	color: #000;
+	text-align: justify;
+}
+.content .main table#schedule th{
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #000000;
+	background-color: #AECE5B;
+	border-bottom-width: 3px;
+	border-bottom-color: #5CA631;
+	border-bottom-style: solid;
+	font-size: 110%;
+}
+.red {
+	color: #F00;
+	font-weight: bold;
+}
+.rednormal {
+	color: #F00;
+}
+.content .main #sobor {
+	background-color: #E7F5CF;
+	margin-left: 30px;
+	text-align: center;
+}
+.content .main #sobor p {
+	text-align: center;
+}
+
+.content .profile #soborovanie {
+	font-weight: normal;
+	text-align: center;
+	margin-left: 30px;
+	background-color: #E7F5CF;
+}
+
+.content .profile #soborovanie p {
+	text-align: center;
+}
+
+.foto_better {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.green {
+	color: #693;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+nav ul {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the space between the navigation on the content below */
+	font-size: 90%;
+}
+nav ul li {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #0C0;
+	border-right-color: #060;
+	border-bottom-color: #060;
+	border-left-color: #0C0;
+}
+nav ul a:link , nav ul a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #2E8B57;
+	text-align: left;
+	color: #FBEC5D;
+	font-weight: bold;
+}
+nav ul a:hover, nav ul a:active, nav ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #FFF;
+	font-size: 100%;
+	background-color: #060;
+}
+.sidebar1 aside {
+	font-size: 90%;
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	color: #FBEC5D;
+	font-size: 90%;
+	background-color: #2E8B57;
+	background-image: url(images/background.png);
+	background-repeat: repeat-x;
+	font-weight: bold;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+nav p {
+	font-size: 90%;
+	color: #FFC;
+	background-color: #FBEE82;
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #060;
+	font-weight: bold;
+	margin: 0px;
+	background-image: url(images/background.png);
+	background-repeat: repeat-x;
+}
+nav p a:link, nav p a:visited {
+	color: #FBEE82;
+	text-decoration: none;
+	padding: 5px;
+	font-weight: bold;
+}
+nav p a:hover, nav p a:active {
+	color: #FFF;
+	background-color: #060;
+}
+.container .sidebar1 aside p {
+	font-size: 100%;
+    text-align: center;	
+}
+
+.content section p #picture {
+	text-align: center;
+}
+.fotogallery {
+	text-align: center;
+}
+.flt_rgt {
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.flt_lft {
+	float: left;
+	margin-right: 20px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+.flt_lft_poslushnitsa {
+	margin-left: 20px;
+}
+
+
+
+.palomnik {
+	font-size: 115%;
+	font-weight: bold;
+	color: #000;
+	text-align: left;
+	margin: 0px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+.content .main #poslushnitsa {
+	float: right;
+	height: 200px;
+	width: 300px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.content .profile .hramBlock {
+	float: left;
+	height: 210px;
+	width: 390px;
+	margin-left: 15px;
+}
+.content .profile #hramBlockBottom {
+	clear: both;
+	height: 220px;
+	width: 500px;
+	margin-left: 100px;
+	padding-left: 50px;
+}
+
+
+.container .main #palomnik {
+	float: left;
+	height: 200px;
+	width: 300px;
+}
+.content .main #map {
+	height: 558px;
+	width: 708px;
+	background-color: #360;
+}
+footer #foottext {
+	font-size: 90%;
+}
+#newsData {
+	float: left;
+	height: 20px;
+	width: 60px;
+}
+.content .profile .data {
+	float: left;
+	margin-right: 20px;
+	font-style: italic;
+	color: #900;
+	font-weight: normal;
+	clear: both;
+}
+.blue {
+	color: #399;
+	font-weight: bold;
+}
+.green {
+	color: #693;
+	font-weight: bold;
+}
+.content .main table tr th {
+	font-weight: normal;
+}
+.content .main #author {
+	font-style: italic;
+	font-weight: bold;
+	text-align: right;
+}
+.content #next {
+	width: 300px;
+	padding-left: 420px;
+	padding-top: 5px;
+	text-align: right;
+}
+.content #previous {
+	width: 300px;
+	margin-left: 20px;
+}
+.video {padding-left: 160px;
+}
+.video1 {padding-left: 110px; type="video/mp4";
+}
